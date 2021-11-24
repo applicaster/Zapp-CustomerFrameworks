@@ -1,5 +1,5 @@
 {
-  "name": "Zapp-CustomFrameworks",
+  "name": "Zapp-CustomerFrameworks",
   "version": "1.0.0",
   "description": "All Custom Frameworks",
   "main": "index.js",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/applicaster/Zapp-CustomFrameworks.git"
+    "url": "git+https://github.com/applicaster/Zapp-CustomerFrameworks.git"
   },
   "keywords": [
     "frameworks"
@@ -28,9 +28,9 @@
   "author": "Applicaster",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/applicaster/Zapp-CustomFrameworks/issues"
+    "url": "https://github.com/applicaster/Zapp-CustomerFrameworks/issues"
   },
-  "homepage": "https://github.com/applicaster/Zapp-CustomFrameworks#readme",
+  "homepage": "https://github.com/applicaster/Zapp-CustomerFrameworks#readme",
   "directories": {
     "doc": "docs"
   },

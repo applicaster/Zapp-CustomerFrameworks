@@ -1,6 +1,6 @@
-# :green_apple: Zapp-CustomFrameworks
+# :green_apple: Zapp-CustomerFrameworks
 
-![CircleCI](https://circleci.com/gh/applicaster/Zapp-CustomFrameworks.svg?style=svg&circle-token=8204c1c08923815cf20b488dbae182dd5da25f8e)
+![CircleCI](https://circleci.com/gh/applicaster/Zapp-CustomerFrameworks.svg?style=svg&circle-token=8204c1c08923815cf20b488dbae182dd5da25f8e)
 [![GitHub license](https://img.shields.io/github/license/applicaster/AppleApplicasterFrameworks)](https://github.com/applicaster/AppleApplicasterFrameworks/blob/master/LICENSE)
 
 This Repo is a monorepo that contains open source Zapp Projects

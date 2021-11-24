@@ -6,7 +6,7 @@ parameters:
 
 references:
   defaults: &defaults
-    working_directory: ~/Zapp-CustomFrameworks
+    working_directory: ~/Zapp-CustomerFrameworks
     shell: /bin/bash --login -eo pipefail
 
   #Hack general caching until circle does not support global env variables
@@ -223,7 +223,7 @@ jobs:
           command: node ./Scripts/apple_unit_tests.js
 
       - store_artifacts:
-          path: ~/Zapp-CustomFrameworks/CircleArtifacts
+          path: ~/Zapp-CustomerFrameworks/CircleArtifacts
 
 workflows:
   version: 2
