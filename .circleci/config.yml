@@ -2,7 +2,7 @@ version: 2.1
 parameters:
   general-caching-key:
     type: string
-    default: "zapp_frameworks_cache_1.0.1"
+    default: "zapp_customer_frameworks_cache_1.0.1"
 
 references:
   defaults: &defaults
