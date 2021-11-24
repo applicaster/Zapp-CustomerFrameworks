@@ -1,0 +1,92 @@
+{
+  "name": "Zapp-CustomFrameworks",
+  "version": "1.0.0",
+  "description": "All Custom Frameworks",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "plugins/*",
+    "development-app"
+  ],
+  "scripts": {
+    "test": "node_modules/.bin/jest -w=2",
+    "prepare_app": "node_modules/.bin/zapplicaster-cli prepare --yarn -d ./development-app",
+    "reload": "node_modules/.bin/zapplicaster-cli reload_config --yarn -d ./development-app",
+    "reset_dev_app": "rm -rf ./development-app/* ./development-app/.babelrc",
+    "start": "node_modules/.bin/react-native start --projectRoot ./development-app",
+    "start:web": "NODE_ENV=development yarn workspace quick-brick-app start",
+    "publish:plugin": "node_modules/.bin/zapplicaster-cli publish_plugin -y",
+    "publish:plugin:canary": "node_modules/.bin/zapplicaster-cli publish_plugin -y --next --skip-git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applicaster/Zapp-CustomFrameworks.git"
+  },
+  "keywords": [
+    "frameworks"
+  ],
+  "author": "Applicaster",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/applicaster/Zapp-CustomFrameworks/issues"
+  },
+  "homepage": "https://github.com/applicaster/Zapp-CustomFrameworks#readme",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "@applicaster/applicaster-types": "5.5.1-rc.4",
+    "@applicaster/quick-brick-xray": "^1.3.0",
+    "@applicaster/zapplicaster-cli": "5.5.1-rc.10",
+    "@applicaster/zapp-react-native-flow-types": "*",
+    "@babel/plugin-transform-flow-strip-types": "^7.10.4",
+    "@babel/plugin-transform-object-assign": "^7.10.4",
+    "@babel/plugin-transform-react-display-name": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-transform-react-jsx-source": "^7.10.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@testing-library/react-native": "^7.0.2",
+    "@types/react": "^16.9.34",
+    "@types/react-native": "^0.63.1",
+    "cli-task-runner": "^1.0.4",
+    "dotenv": "^8.1.0",
+    "ejs": "3.0.1",
+    "jest": "^26.5.2",
+    "jest-cli": "^26.5.2",
+    "jest-html-reporter": "^3.2.0",
+    "jest-watch-typeahead": "^0.6.1",
+    "moment": "2.24.0",
+    "plist": "3.0.1",
+    "prettier": "^2.1.2",
+    "ramda": "^0.27.0",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "semver": "^7.1.3",
+    "shelljs": "^0.8.3",
+    "simple-git": "^1.132.0",
+    "typescript": "^4.0.2",
+    "@types/node": "^12.12.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.5.2"
+  },
+  "resolutions": {
+    "lodash": "^4.17.19",
+    "minimist": "^0.2.1",
+    "mem": "^4.0.0",
+    "node-fetch": "^2.6.1",
+    "yargs-parser": "^13.1.2",
+    "@babel/types": "^7.10.4",
+    "@types/react": "^16.9.34",
+    "@applicaster/quick-brick-xray": "^1.3.0",
+    "jsrsasign": "^10.2.0",
+    "hosted-git-info": "^2.8.9"
+  },
+  "applicaster": {
+    "moduleMap": {
+
+    }
+  }
+}

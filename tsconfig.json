@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types",
+    ],
+    "allowJs": true,
+    "baseUrl": "./plugins/",
+    "paths": {},
+    "moduleResolution": "node"
+  },
+  "references": [
+    { "path": "./development-app" },
+  ]
+}
