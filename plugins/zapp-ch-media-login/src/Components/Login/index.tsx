@@ -130,10 +130,11 @@ export const Login = (props) => {
       const session = await getKalturaSession();
       const isUserLoggingOut = session && !playerHook && !callback;
 
-
       if (session && !isUserLoggingOut) {
- 
-        return handleSuccess(RESPONSES.alreadyLoggedIn, {session, isUserLoggingOut});
+        return handleSuccess(RESPONSES.alreadyLoggedIn, {
+          session,
+          isUserLoggingOut,
+        });
       }
 
       if (isUserLoggingOut) {
@@ -173,10 +174,11 @@ export const Login = (props) => {
 
         setLoading(false);
       } else {
-        // const session = getKalturaSession();
-        // TODO: Do not refresh if not needed
-        const success = await refreshToken(refreshConfig);
+        let success = !!(await getKalturaSession());
 
+        if (!success) {
+          success = await refreshToken(refreshConfig);
+        }
         if (callback) {
           return handleSuccess(RESPONSES.success + success, {
             params,
