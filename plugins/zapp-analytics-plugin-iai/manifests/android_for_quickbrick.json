@@ -1,0 +1,61 @@
+{
+  "dependency_repository_url": [],
+  "dependency_name": "@applicaster/zapp_analytics_plugin_iai",
+  "author_name": "Applicaster",
+  "author_email": "zapp@applicaster.com",
+  "name": "IAI Analytics Plugin",
+  "description": "IAI Analytics Plugin",
+  "type": "analytics",
+  "screen": true,
+  "react_native": true,
+  "identifier": "zapp_analytics_plugin_iai",
+  "ui_builder_support": true,
+  "whitelisted_account_ids": [
+    "5e12fac7666333000ec0f8ab",
+    "5bb4b90c395a02000ed0ec24"
+  ],
+  "deprecated_since_zapp_sdk": "",
+  "unsupported_since_zapp_sdk": "",
+  "preload": true,
+  "ui_frameworks": [
+    "quickbrick"
+  ],
+  "platform": "android_for_quickbrick",
+  "dependency_version": "0.1.0",
+  "manifest_version": "0.1.0",
+  "api": {},
+  "project_dependencies": [],
+  "extra_dependencies": [],
+  "min_zapp_sdk": "3.0.0-dev",
+  "npm_dependencies": [],
+  "custom_configuration_fields": [
+    {
+      "type": "text_input",
+      "key": "service_url",
+      "label": "Service POST URL"
+    },
+    {
+      "type": "text_input",
+      "key": "firebase_user_token_namespace",
+      "label": "Firebase User Token Namespace"
+    },
+    {
+      "type": "text_input",
+      "key": "firebase_user_token_key",
+      "label": "Firebase User Token Key"
+    },
+    {
+      "type": "text_input",
+      "key": "access_token_namespace",
+      "label": "Access Token Namespace"
+    },
+    {
+      "type": "text_input",
+      "key": "access_token_key",
+      "label": "Access Token Key"
+    }
+  ],
+  "targets": [
+    "mobile"
+  ]
+}
