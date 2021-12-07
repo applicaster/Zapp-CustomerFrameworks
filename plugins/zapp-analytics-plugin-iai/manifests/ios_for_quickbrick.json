@@ -18,10 +18,10 @@
   "ui_frameworks": [
     "quickbrick"
   ],
-  "platform": "android_for_quickbrick",
+  "platform": "ios_for_quickbrick",
   "dependency_version": "0.2.1",
   "manifest_version": "0.2.1",
-  "min_zapp_sdk": "3.0.0-dev",
+  "min_zapp_sdk": "5.5.0-Dev",
   "custom_configuration_fields": [
     {
       "type": "text_input",
