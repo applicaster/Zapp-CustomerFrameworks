@@ -191,7 +191,7 @@ jobs:
 
       - run:
           name: Tests
-          command: yarn test
+          command: yarn test --passWithNoTests
 
   apple_unit_tests:
     <<: *defaults

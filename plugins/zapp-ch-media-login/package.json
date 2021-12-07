@@ -1,0 +1,39 @@
+{
+  "name": "@applicaster/ch-media-login",
+  "version": "0.3.7",
+  "author": "Zapp Team",
+  "license": "ISC",
+  "description": "CH Media WebView Login",
+  "main": "lib/index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "axios": "^0.21.2",
+    "crypto-js": "3.1.9-1",
+    "jwt-decode": "3.1.2",
+    "moment": "^2.24.0",
+    "ramda": "^0.26.1",
+    "react-native-keyboard-spacer": "0.4.1",
+    "react-redux": "^7.2.1",
+    "sha1": "1.1.1"
+  },
+  "peerDependencies": {
+    "@applicaster/applicaster-types": "*",
+    "@applicaster/quick-brick-xray": "*",
+    "@applicaster/zapp-react-native-bridge": "*",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "react-native-safe-area-context": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
+  "applicaster": {
+    "supportedPlatforms": [
+      "ios_for_quickbrick",
+      "android_for_quickbrick"
+    ],
+    "zappOwnerAccountId": "5e12fac7666333000ec0f8ab"
+  }
+}
