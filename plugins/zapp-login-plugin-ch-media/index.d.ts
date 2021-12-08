@@ -1,6 +1,6 @@
 /// <reference types="@applicaster/applicaster-types" />
 
-declare module "@applicaster/ch-media-login";
+declare module "@applicaster/zapp-login-plugin-ch-media";
 
 declare type ValueArg = string | number | boolean | Array<any> | Object;
 

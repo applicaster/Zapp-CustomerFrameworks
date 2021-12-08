@@ -2,7 +2,7 @@ const R = require("ramda");
 const Localizations = require("./localizations.config");
 
 const baseManifest = {
-  dependency_name: "@applicaster/ch-media-login",
+  dependency_name: "@applicaster/zapp-login-plugin-ch-media",
   author_name: "Applicaster",
   author_email: "zapp@applicaster.com",
   name: "CH Media Web Login",

@@ -1,5 +1,5 @@
 {
-  "dependency_name": "@applicaster/ch-media-login",
+  "dependency_name": "@applicaster/zapp-login-plugin-ch-media",
   "author_name": "Applicaster",
   "author_email": "zapp@applicaster.com",
   "name": "CH Media Web Login",
@@ -140,13 +140,13 @@
       }
     ]
   },
-  "platform": "ios_for_quickbrick",
+  "platform": "android_for_quickbrick",
   "dependency_version": "0.3.8",
   "manifest_version": "0.3.8",
   "api": {},
   "project_dependencies": [],
   "extra_dependencies": [],
-  "min_zapp_sdk": "4.1.0-Dev",
+  "min_zapp_sdk": "0.1.0-alpha1",
   "npm_dependencies": [],
   "styles": {
     "fields": [
