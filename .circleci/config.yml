@@ -108,7 +108,7 @@ jobs:
 
       - run:
           name: NPM Login
-          ccommand: echo "skipping npm login"
+          command: echo "skipping npm login"
           # command: npx npm-shell-login
 
       - restore_cache:
