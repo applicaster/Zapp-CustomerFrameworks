@@ -108,7 +108,8 @@ jobs:
 
       - run:
           name: NPM Login
-          command: npx npm-shell-login
+          ccommand: echo "skipping npm login"
+          # command: npx npm-shell-login
 
       - restore_cache:
           keys:
@@ -143,7 +144,8 @@ jobs:
 
       - run:
           name: NPM Login
-          command: npx npm-shell-login
+          command: echo "skipping npm login"
+          # command: npx npm-shell-login
 
       - restore_cache:
           keys:
@@ -174,7 +176,8 @@ jobs:
 
       - run:
           name: NPM Login
-          command: npx npm-shell-login
+          command: echo "skipping npm login"
+          # command: npx npm-shell-login
 
       - restore_cache:
           keys:
