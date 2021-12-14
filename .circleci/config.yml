@@ -38,8 +38,9 @@ references:
   npm_login: &npm_login
     run:
       name: NPM login
-      command: npx npm-shell-login
-
+      command: echo "skipping npm login"
+      # command: npx npm-shell-login
+      
   npm_cache_key: &npm_cache_key Yarn.1.0-{{ checksum "~/_caching_file" }}-{{ checksum "yarn.lock" }}
 
   prepare_npm_cache_file: &prepare_npm_cache_file
