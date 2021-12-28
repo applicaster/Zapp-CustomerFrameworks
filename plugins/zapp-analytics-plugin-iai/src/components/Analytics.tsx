@@ -52,6 +52,8 @@ export function Analytics(props: Props) {
 
   const postAnalyticData = async () => {
     try {
+      shouldSkiphook = true;
+
       logger.debug({
         message: `Running POST Request`,
       });
@@ -84,10 +86,10 @@ export function Analytics(props: Props) {
 
       if (res.status >= 400 || !res.data.isSuccessStatusCode) {
         logger.debug({
-          message: `Request failed with status ${res.status}`,
+          message: `Request failed isSuccessStatusCode ${res?.data?.isSuccessStatusCode}`,
           data: { status: res.status, data: res.data }
         });
-
+        
         callback({ success: true });
         return;
       }
