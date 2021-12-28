@@ -85,6 +85,11 @@ export function Analytics(props: Props) {
       });
 
       if (res.status >= 400 || !res.data.isSuccessStatusCode) {
+        logger.debug({
+          message: `Request failed isSuccessStatusCode ${res?.data?.isSuccessStatusCode}`,
+          data: { status: res.status, data: res.data }
+        });
+        
         callback({ success: true });
         return;
       }
