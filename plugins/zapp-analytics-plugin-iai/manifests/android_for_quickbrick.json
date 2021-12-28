@@ -19,8 +19,8 @@
     "quickbrick"
   ],
   "platform": "android_for_quickbrick",
-  "dependency_version": "0.2.1",
-  "manifest_version": "0.2.1",
+  "dependency_version": "0.2.2",
+  "manifest_version": "0.2.2",
   "min_zapp_sdk": "3.0.0-dev",
   "custom_configuration_fields": [
     {
