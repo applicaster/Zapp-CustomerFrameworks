@@ -83,10 +83,7 @@ export function Analytics(props: Props) {
       });
 
       if (res.status >= 400 || !res.data.isSuccessStatusCode) {
-        logger.debug({
-          message: `Request failed with status ${res.status}`,
-          data: { status: res.status, data: res.data }
-        });
+        shouldSkiphook = true;
 
         callback({ success: true });
         return;
